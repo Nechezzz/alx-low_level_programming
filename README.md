@@ -1,1 +1,1 @@
-# alx-low_level_programming
+ Repository contains C programming projects and other low level programming exercices.
