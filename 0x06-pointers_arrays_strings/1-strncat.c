@@ -5,27 +5,27 @@
  * @dest: input parameter string
  * @src: input parameter string
  * @n: times to iterations
- * Return: dest
+ *
+ * Return: a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int a;
-	int b;
+	int i, j;
 
-	a = 0;
+	i = 0;
+	j = 0;
 
-	while (dest[a] != 0)
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0' && j < n)
 	{
-		a++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 
-	b = 0;
+	dest[i] = '\0';
 
-	while (src[b] != 0 && b < n)
-	{
-		dest[a] = src[b];
-		a++;
-		b++;
-	}
-	retuen (dest);
+	return (dest)
 }
